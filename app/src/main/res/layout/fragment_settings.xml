@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        style="@style/ScreenBackground"
+        >
+
+
+        <ListView
+            android:id="@+id/settingsListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewAppVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/logout_btn"
+            android:text="Версия приложения: 1.0"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/logout_btn"
+            android:layout_marginTop="24dp"
+            android:textSize="18sp"
+            android:backgroundTint="#FF4081"
+            android:onClick="logOut"
+            android:layout_centerHorizontal="true"
+            android:text="Выход из аккаунта"/>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

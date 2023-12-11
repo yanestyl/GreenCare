@@ -1,0 +1,62 @@
+<!-- res/layout/activity_select_multiple_photos.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view_photos"
+        android:text="Добавьте или сделайте фотографии"
+        android:textAlignment="center"
+        android:textColor="@color/lavender"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginVertical="20dp" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_below="@id/text_view_photos"
+        android:layout_height="350dp">
+
+        <LinearLayout
+            android:id="@+id/photosContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"/>
+
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/addPhotoButton"
+        android:layout_below="@id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="50dp"
+        android:paddingVertical="15dp"
+        android:text="Добавить фотографию из галереи"/>
+
+    <Button
+        android:id="@+id/capturePhotoButton"
+        android:layout_below="@id/addPhotoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:paddingVertical="15dp"
+        android:text="Сделать фотографию"/>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:text="Далее"/>
+
+</RelativeLayout>
